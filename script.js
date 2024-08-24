@@ -24,18 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             skill.style.transform = 'scale(1)';
         });
     });
-
-    galleryItems.forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            item.style.transform = 'scale(1.05)';
-            item.style.transition = 'transform 0.2s ease';
-        });
-
-        item.addEventListener('mouseleave', () => {
-            item.style.transform = 'scale(1)';
-        });
-    });
-
     const navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(link => {
