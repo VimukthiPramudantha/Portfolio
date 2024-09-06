@@ -1,163 +1,73 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">Portfolio</div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#gallery">Gallery</a>
-          </li>
-          <li>
-            <a href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="hero">
-      <h1>Welcome to My World</h1>
-      <p>Where Creativity Meets Aggression</p>
-    </section>
-
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="project">
-        <h3>Habit Tracker</h3>
-        <p>
-          Develop an app where users can set and track their daily habits. The
-          app can remind users to complete their habits and show progress over
-          time.
-        </p>
-      </div>
-      <div class="project">
-        <h3>To-Do List App</h3>
-        <p>
-          A to-do list app where users can add, edit, delete, and mark tasks as
-          complete. You can also implement task prioritization or reminders.
-        </p>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skill">
-        <h3>HTML & CSS</h3>
-        <p>
-          HTML and CSS are the foundation of web development, allowing you to
-          structure content and style web pages. With these, you can create
-          responsive, visually appealing websites that are both functional and
-          accessible across various devices and browsers.
-        </p>
-      </div>
-      <div class="skill">
-        <h3>JavaScript</h3>
-        <p>
-          JavaScript is a powerful, versatile scripting language that brings
-          interactivity and dynamic functionality to web pages. It's essential
-          for creating responsive user interfaces, handling asynchronous
-          operations, and enhancing user experiences with features like
-          animations, real-time updates, and complex logic.
-        </p>
-      </div>
-      <div class="skill">
-        <h3>PHP</h3>
-        <p>
-          PHP is a server-side scripting language designed for web development.
-          It's widely used for building dynamic websites and applications,
-          handling backend processes like data storage, user authentication, and
-          content management. PHP's flexibility and compatibility make it a
-          staple in web development.
-        </p>
-      </div>
-      <div class="skill">
-        <h3>Java Desktop Application Development</h3>
-        <p>
-          Java facilitates the development of secure, scalable desktop
-          applications with robust features and cross-platform compatibility.
-          Its extensive libraries and frameworks make it an ideal choice for
-          creating complex, data-driven applications that perform reliably
-          across different operating systems.
-        </p>
-      </div>
-      <div class="skill">
-        <h3>C++ Backend Development</h3>
-        <p>
-          C++ is known for its performance and efficiency in backend
-          development, particularly in systems requiring real-time processing.
-          Its ability to create fast, resource-efficient systems makes it
-          perfect for large-scale applications and services where low-latency
-          responses are critical.
-        </p>
-      </div>
-      <div class="skill">
-        <h3>Java Mobile Application Development</h3>
-        <p>
-          Java is the core language for Android app development, enabling the
-          creation of dynamic, high-performance mobile applications. Its rich
-          ecosystem of libraries and tools supports building responsive,
-          user-friendly apps that function seamlessly across a wide range of
-          devices.
-        </p>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <h2>Portfolio Gallery</h2>
-      <div class="gallery-item">
-        <div class="slider">
-          <div class="image-container">
-            <img src="./pic/musicHub.png" alt="Image 1" class="slide active" />
-            <p class="description">Music Hub</p>
+    <section class="intro">
+      <header>
+        <nav id="navbar">
+          <ul>
+            <li>
+              <a href="#portfolio"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="./About.html"><b>About me</b></a>
+            </li>
+            <li>
+              <a href="./skills.html"><b>Skills</b></a>
+            </li>
+            <li>
+              <a href="./contact.html"><b>Contact me</b></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="intro-text">
+        <h2>Hi, I am</h2>
+        <h1>Vimukthi</h1>
+        <p>Front-end Developer / UI Designer</p>
+        <div class="social-links">
+          <div id="img" style="margin-left: 40px">
+            <a href="vimukthipramudanth@gmail.com"
+              ><img src="./includes/gmail.png" alt="Email"
+            /></a>
           </div>
-          <div class="image-container">
-            <img src="./pic/The-Gallery-Cafe.png" alt="Image 2" class="slide" />
-            <p class="description">The Gallery Cafe</p>
+          <div id="img">
+            <a href="https://github.com/VimukthiPramudantha"
+              ><img src="./includes/github.png" alt="GitHub"
+            /></a>
           </div>
-          <div class="image-container">
-            <img src="./pic/new.png" alt="Image 3" class="slide" />
-            <p class="description">Music Hub github Releases</p>
-          </div>
-          <div class="image-container">
-            <img src="./pic/admin.png" alt="Image 4" class="slide" />
-            <p class="description">The Gallery Cafe Admin Dashboard</p>
-          </div>
-          <div class="image-container">
-            <img src="./pic/mobile.png" alt="Image 5" class="slide" />
-            <p class="description">Furry Feast</p>
-          </div>
-          <div class="image-container">
-            <img src="./pic/contactPage.png" alt="Image 6" class="slide" />
-            <p class="description">The Gallery Cafe Contact Page</p>
-          </div>
-          <div class="image-container">
-            <img src="./pic/staff.png" alt="Image 7" class="slide" />
-            <p class="description">The Gallery Cafe Staff Dashboard</p>
+          <div id="img">
+            <a
+              href="https://www.linkedin.com/in/vimukthi-pramudantha-944397279/"
+              ><img src="./includes/linkedin.png" alt="LinkedIn"
+            /></a>
           </div>
         </div>
       </div>
+      <div class="intro-image">
+        <img
+          src="./includes/1686060866993-removebg-preview.png"
+          alt="Vimukthi"
+        />
+      </div>
     </section>
 
-    <footer>
-      <p>&copy; Vimuxx</p>
-    </footer>
-
-    <script src="./script.js"></script>
+    <section class="featured-content">
+      <h2>About Me</h2>
+      <p>
+        I'm P. Vimukthi Pramudantha, a Front-end Developer and UI/UX Designer
+        with a passion for crafting intuitive and visually appealing digital
+        experiences. As a Software Engineering student at ICBT Campus, I focus
+        on blending creativity with functionality in my web and mobile projects.
+        I'm driven by a love for learning and problem-solving, always aiming to
+        create work that both looks great and works seamlessly.
+      </p>
+      <a href="./About.html" class="read-more">Read More</a>
+    </section>
   </body>
 </html>
-;

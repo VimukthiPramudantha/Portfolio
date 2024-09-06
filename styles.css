@@ -1,216 +1,151 @@
 body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: white;
-  color: black;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: white;
-  border-bottom: 2px solid #566573;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
+    position: absolute;
+    right: 20px; 
+    top: 20px;
+    z-index: 10; 
 }
 
-header.sticky {
-  background-color: #566573;
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 19px;
+    display: flex;
+    margin-right: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0px 5px 0px 5px;
+#navbar ul li {
+    margin-left: 20px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #808b96;
-  font-weight: bold;
-  transition: color 0.3s, transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 5px;
-  position: relative;
+#navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 2px;
-  background-color: silver;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
+#navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
-nav ul li a:hover {
-  color: black;
-  transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.intro {
+    display: flex;
+    padding-left: 50px;
+    height: 571px;
+    background-color: #000;
+    position: relative; 
 }
 
-nav ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.intro-text {
+    flex: 1;
+    align-content: center;
+    z-index: 5;
 }
 
-#hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-size: cover;
-  text-align: center;
-  color: #3a3a3a;
-  position: relative;
-  z-index: 1;
+.intro-text h1 {
+    font-size: 60px;
+    margin: 10px 0;
 }
 
-#hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(./images/pankaj-patel-ZV_64LdGoao-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px);
-  z-index: -1;
-  opacity: 0.8;
+.intro-text h2 {
+    font-size: 30px;
+}
+.intro-text h2, h1, p, .social-links{
+    padding-left: 80px;
 }
 
-#hero p {
-  color: #606060;
+.intro-text p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+#img{
+    display: inline-block;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    padding: 5px 0px 0px 5px;
+    border-radius: 10px;
+    background-color: white;
 }
 
-#hero h1 {
-  font-size: 5rem;
-  margin: 0;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  z-index: 1;
-  animation: fadeIn 1.5s ease-in-out;
+.social-links a img {
+    width: 30px;
+    margin-right: 20px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding-left: 50px;
+    margin-left: -50px;
+    padding-top: 5px;
 }
 
-#projects {
-  padding: 50px;
-  background-color: #eaecee;
+.intro-image::before {
+    content: '';
+    position: absolute;
+    left: -25em;
+    top: 32%;
+    transform: translateY(-63%) rotate(20deg);
+    background: black;
+    width: 40%;
+    height: 174%;
+    margin-left: 300px;
+    z-index: 1;
 }
 
-.project {
-  margin-bottom: 30px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.intro-image img {
+    width: 500px;
+    border-radius: 10px;
+    padding-top: 65px;
 }
 
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+.featured-content {
+    text-align: left;
+    padding-left: 50px;
 }
 
-#skills {
-  padding: 50px;
-  background-color: #f7f9f9;
+.featured-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.skill {
-  margin-bottom: 20px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+.featured-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    padding-right: 40px;
+    margin: 0 auto 50px;
+    
 }
 
-.skill:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+.read-more {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 0;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-#gallery {
-  padding: 50px;
-  background-color: #fdfefe;
-}
-
-.gallery-item {
-  display: flex;
-  justify-content: center;
-}
-
-.slider {
-  gap: 5px;
-  display: flex;
-  overflow: hidden;
-}
-
-.image-container {
-  min-width: 100px;
-  max-width: 100px;
-  transition: all 0.3s ease;
-  text-align: left;
-  position: relative;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: block;
-}
-
-.image-container p {
-  text-align: center;
-  margin-top: 10px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.image-container:hover img {
-  transform: scale(1.2);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.image-container:hover {
-  min-width: 400px;
-  max-width: 400px;
-}
-
-.image-container:hover p {
-  opacity: 1;
-  margin-top: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #566573;
-  color: white;
+.read-more:hover{
+    background-color: #121212;
+    border-right: solid white 1px;
+    border-left:solid white 1px;
 }
