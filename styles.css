@@ -1,151 +1,153 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #fff;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #fff;
 }
 
 header {
-    position: absolute;
-    right: 20px; 
-    top: 20px;
-    z-index: 10; 
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
 }
 
 #navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 19px;
-    display: flex;
-    margin-right: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 19px;
+  display: flex;
+  margin-right: 20px;
 }
 
 #navbar ul li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #navbar ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-#navbar ul li a:hover{
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
+#navbar ul li a:hover {
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
 
 .intro {
-    display: flex;
-    padding-left: 50px;
-    height: 571px;
-    background-color: #000;
-    position: relative; 
+  display: flex;
+  padding-left: 50px;
+  height: 571px;
+  background-color: #000;
+  position: relative;
 }
 
 .intro-text {
-    flex: 1;
-    align-content: center;
-    z-index: 5;
+  flex: 1;
+  align-content: center;
+  z-index: 5;
 }
 
 .intro-text h1 {
-    font-size: 60px;
-    margin: 10px 0;
+  font-size: 60px;
+  margin: 10px 0;
 }
 
 .intro-text h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
-.intro-text h2, h1, p, .social-links{
-    padding-left: 80px;
+.intro-text h2,
+h1,
+p,
+.social-links {
+  padding-left: 80px;
 }
 
 .intro-text p {
-    font-size: 20px;
-    margin-top: 20px;
+  font-size: 20px;
+  margin-top: 20px;
 }
-#img{
-    display: inline-block;
-    margin-right: 20px;
-    width: 35px;
-    height: 35px;
-    padding: 5px 0px 0px 5px;
-    border-radius: 10px;
-    background-color: white;
+#img {
+  display: inline-block;
+  margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  padding: 5px 0px 0px 5px;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .social-links a img {
-    width: 30px;
-    margin-right: 20px;
+  width: 30px;
+  margin-right: 20px;
 }
 
 .intro-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: white;
-    padding-left: 50px;
-    margin-left: -50px;
-    padding-top: 5px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding-left: 50px;
+  margin-left: -50px;
+  padding-top: 5px;
 }
 
 .intro-image::before {
-    content: '';
-    position: absolute;
-    left: -25em;
-    top: 32%;
-    transform: translateY(-63%) rotate(20deg);
-    background: black;
-    width: 40%;
-    height: 174%;
-    margin-left: 300px;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  left: -25em;
+  top: 32%;
+  transform: translateY(-63%) rotate(20deg);
+  background: black;
+  width: 40%;
+  height: 174%;
+  margin-left: 300px;
+  z-index: 1;
 }
 
 .intro-image img {
-    width: 500px;
-    border-radius: 10px;
-    padding-top: 65px;
+  width: 500px;
+  border-radius: 10px;
+  padding-top: 65px;
 }
 
 .featured-content {
-    text-align: left;
-    padding-left: 50px;
+  text-align: left;
+  padding-left: 50px;
 }
 
 .featured-content h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .featured-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: left;
-    padding-right: 40px;
-    margin: 0 auto 50px;
-    
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+  padding-right: 40px;
+  margin: 0 auto 50px;
 }
 
 .read-more {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    position: relative;
-    z-index: 0;
-    background-color: black;
-    border-radius: 5px;
-    font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 0;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.read-more:hover{
-    background-color: #121212;
-    border-right: solid white 1px;
-    border-left:solid white 1px;
+.read-more:hover {
+  background-color: #121212;
+  border-right: solid white 1px;
+  border-left: solid white 1px;
 }
