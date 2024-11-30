@@ -98,18 +98,6 @@ p,
   padding-top: 5px;
 }
 
-.intro-image::before {
-  content: "";
-  position: absolute;
-  left: -25em;
-  top: 32%;
-  transform: translateY(-63%) rotate(20deg);
-  background: black;
-  width: 40%;
-  height: 174%;
-  margin-left: 300px;
-  z-index: 1;
-}
 
 .intro-image img {
   width: 500px;
